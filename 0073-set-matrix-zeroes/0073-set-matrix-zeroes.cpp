@@ -16,22 +16,14 @@ public:
             }
         }
         
-        // Set rows to zero
+        // Set rows to zero and columns also
         for(int i = 0; i < m; i++) {
-            if(rows[i] == 1) {
+            if(rows[i] == 1 || columns[j]==1) {
                 for(int j = 0; j < n; j++) {
                     matrix[i][j] = 0;
                 }
             }
         }
         
-        // Set columns to zero
-        for(int j = 0; j < n; j++) {
-            if(columns[j] == 1) {
-                for(int i = 0; i < m; i++) {
-                    matrix[i][j] = 0;
-                }
-            }
-        }
     }
 };
