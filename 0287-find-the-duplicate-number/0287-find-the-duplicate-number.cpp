@@ -16,3 +16,6 @@ public:
         return s;
     }
 };
+
+//T.C - O(N)
+//S.C-O(1)
